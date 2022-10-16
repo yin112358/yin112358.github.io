@@ -1,0 +1,28 @@
+<div id="backTopBtn"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+<script>
+function backTop (minHeight) {
+ var backTopHtml = '<div id="backTopBtn"><i class="fa fa-angle-up" aria-hidden="true"></i></div>'
+ $('#page').append(backTopHtml)
+ $('#backTopBtn').click(function () {
+  $('html, body').animate({scrollTop: 0}, 700)
+ }).hover(
+  function () {
+    $(this).addClass('hover')
+  },
+  function () {
+    $(this).removeClass('hover')
+  }
+ )
+ minHeight ? minHeight = minHeight : minHeight = 400
+ $(window).scroll(function () {
+  var s = $(window).scrollTop()
+  if (s > minHeight) {
+    $('#backTopBtn').slideDown(100)
+  } else {
+    $('#backTopBtn').slideUp(100)
+  }
+ })
+}
+
+backTop()
+</script>
