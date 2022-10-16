@@ -1,0 +1,37 @@
+.character-line {
+ display: inline-flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.character-avatar {
+ padding: 20px;
+ display: grid;
+}
+
+.character-avatar a {
+ text-decoration: none;
+ display: grid;
+}
+
+.character-avatar a::before {
+ display: none;
+}
+
+.character-avatar img {
+ height:8em !important;
+ width: 8em !important;
+ overflow: hidden;
+	object-fit: cover;
+ border: 2px solid var(--base-color-black);
+ opacity: .8;
+ transition-duration: .2s;
+ border-radius: 50%;
+ transition-duration: .5s;
+}
+
+.character-avatar img:hover {
+ opacity: 1;
+ transform: rotate(360deg);
+}

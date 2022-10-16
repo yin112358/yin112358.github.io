@@ -1,0 +1,32 @@
+.author-box {
+ top:70px;
+ position:relative;
+}
+
+.author-avatar {
+ width:180px;
+ height:180px;
+ position:relative;
+ margin: auto;
+ top:115px;
+}
+
+.author-avatar img {
+ object-fit:cover;
+ width:100%;
+ height:100%;
+ border-radius:50%;
+ border:5px solid #fff;
+}
+
+.social-links {
+ text-align:center;
+ position:relative;top:11em;
+}
+
+@media (max-width: 720px) {
+ .author-avatar {
+  width:145px;
+  height:145px;
+ }
+}

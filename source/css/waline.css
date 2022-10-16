@@ -1,0 +1,41 @@
+.wl-panel {
+ background: transparent !important;
+}
+
+.wl-header {
+ height: 50px !important;
+}
+
+.wl-header label {
+ padding: .9em .5em !important;
+ font-size: .85em !important;
+}
+
+.wl-header input {
+ padding: .1em 0 0 !important;
+}
+
+.wl-btn {
+ padding: 0em 1em !important;
+ height: 35px !important;
+}
+
+.wl-comment > input:focus, .wl-comment > textarea:focus, .wl-comment > button:focus {
+ border-bottom: 0 !important;
+}
+
+.wl-card .wl-meta>span {
+ background: transparent !important;
+}
+
+[data-waline] p {
+ color: #ddd !important;
+}
+
+[data-waline] a {
+ color: #4bffa5 !important;
+}
+
+.wl-content .vemoji, .wl-content .wl-emoji {
+ width: auto !important;
+}

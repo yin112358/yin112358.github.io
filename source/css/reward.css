@@ -1,0 +1,106 @@
+.reward {
+ padding: 75px 0 20px;
+}
+.reward .reward-notice {
+ font-size: 17px;
+ line-height: 17px;
+ margin: 15px auto;
+ text-align: center;
+}
+.reward .reward-button {
+ font-size: 28px;
+ line-height: 58px;
+ position: relative;
+ display: block;
+ width: 60px;
+ height: 60px;
+ margin: 0 auto;
+ padding: 0;
+ -webkit-user-select: none;
+ text-align: center;
+ vertical-align: middle;
+ color: #ddd;
+ border: 1px solid #32634a;
+ border-radius: 50%;
+ background: #1d5f3e;
+ background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#35684e),color-stop(100%,#395f4c),color-stop(100%,#305763),color-stop(100%,#377272));
+ background: -webkit-linear-gradient(top,#216945 0,#346e5de7 100%,#387474 100%,#3c5861 100%);
+ background: linear-gradient(to bottom,#216945 0,#346e5de7 100%,#387474 100%,#3c5861 100%);
+}
+
+.reward .reward-code {
+ position: absolute;
+ top: -230px;
+ left: 30px;
+ display: none;
+ width: 350px;
+ height: 200px;
+ margin-left: -175px;
+ padding: 15px;
+ background: rgba(240,240,240,.9);
+ box-shadow: 0 1px 1px 1px rgba(240,240,240,.9);
+}
+
+.reward .reward-code::before {
+ 
+}
+
+.reward .reward-button:hover .reward-code {
+ display: block;
+}
+
+.reward .reward-code span {
+ display: inline-block;
+ width: 150px;
+ height: 150px;
+}
+.reward .reward-code span.alipay-code {
+ float: left;
+}
+.reward .reward-code span.alipay-code a {
+ padding: 0;
+}
+.reward .reward-code span.wechat-code {
+ float: right;
+}
+.reward .reward-code img {
+ display: inline-block;
+ float: left;
+ width: 150px;
+ height: 150px;
+ margin: 0 auto;
+ border: 0;
+}
+.reward .reward-code b {
+ font-size: 14px;
+ line-height: 26px;
+ display: block;
+ margin: 0;
+ text-align: center;
+ color: #666;
+}
+.reward .reward-code b.notice {
+ line-height: 2rem;
+ margin-top: -1rem;
+ color: #999;
+}
+
+.reward .reward-code:after,.reward .reward-code:before {
+ position: absolute;
+ content: '';
+ border: 10px solid transparent;
+}
+
+.reward .reward-code:after {
+ bottom: -19px;
+ left: 50%;
+ margin-left: -10px;
+ border-top-color: rgba(240,240,240,.8);
+}
+
+.reward .reward-code:before {
+ bottom: -20px;
+ left: 50%;
+ margin-left: -10px;
+ border-top-color: rgba(240,240,240,.8);
+}

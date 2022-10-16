@@ -1,0 +1,99 @@
+#artitalk_main #lazy {
+ background: transparent !important;
+}
+
+#artitalk_main .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel,
+#artitalk_main .cbp_tmtimeline>li .cbp_tmlabel {
+ background: #4bffa5 !important;
+ padding: 1px 25px !important;
+}
+
+#artitalk_main .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after,
+#artitalk_main .cbp_tmtimeline>li .cbp_tmlabel:after {
+ border-right-color: #4bffa5 !important;
+}
+
+#artitalk_main p.shuoshuo_time {
+ border-top: 1px dashed #020202 !important;
+ margin-bottom: 20px !important;
+ font-size: 14px !important;
+}
+
+#operare_artitalk .at_button, #artitalk_main .at_button {
+ background-color:#4bffa5 !important;
+ opacity: 0.7;
+ padding: 6px 16px 5px !important;
+}
+
+#operare_artitalk .at_button:hover, #artitalk_main .at_button:hover {
+ background-color: #4bffa5 !important;
+ opacity: 1;
+ box-shadow: 0 0 5px #4bffa5 !important;
+}
+
+#artitalk_main .shuoshuo_author_img img {
+ position: relative;
+ bottom: 9px;
+ right: 10px;
+}
+
+#artitalk_main #shuoshuo_content img {
+ max-width: 80%;
+}
+
+#artitalk_main .shuoshuo_text {
+ color: #ddd !important;
+}
+
+#operare_artitalk .c2 {
+ z-index: 99 !important;
+ opacity: 0.9 !important;
+ padding: 10px !important;
+}
+
+
+#operare_artitalk p {
+ margin: 10px !important;
+}
+
+#operare_artitalk .at_button, #artitalk_main .at_button {
+ margin: 0 5px !important;
+}
+
+#readButton #readmore {
+ font-family: inherit;
+ font-size: 14px;
+}
+
+@media (max-width: 720px) { 
+ #readButton #readmore {
+  margin: 40px 5px 20px !important;
+ }
+}
+
+#artitalk_main .shuoshuo_inputs {
+ border-radius: 6px;
+ margin-right: 10px;
+}
+
+#logw pre {
+ background: transparent !important;
+ margin: 10px 0 !important;
+ padding: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+ #artitalk_main .shuoshuo_author_img img {
+  position: relative !important;
+  top: 37px !important;
+  right: 16px;
+  z-index: 10;
+  border: 2px solid #ddd !important;
+  padding: 0 !important;
+  float: none !important;
+ }
+
+ #artitalk_main .cbp_tmtimeline>li .cbp_tmlabel {
+  margin: 0 !important;
+ }
+}
