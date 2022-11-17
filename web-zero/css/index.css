@@ -1,0 +1,591 @@
+/*网页加载页面*/
+body .shell-top 
+  {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(221, 203, 203), rgb(31, 16, 25));
+    position: absolute;
+    transition: .2s;
+    overflow: hidden;
+  }
+/*视频大小*/
+body .shell-top video 
+  {
+    width: 100%;
+  }
+/*顶页框*/
+body .shell-top .word 
+  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 220px;
+    border: solid 10px rgba(255, 255, 255, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+/*顶页框文字*/
+body .shell-top .word h2
+  {
+    font: 100 70px 'font';
+    color: #fff;
+    letter-spacing: 10px;
+  }
+
+
+/*导航栏大小*/
+body .shell-main 
+  {
+    width: 100%;
+    height: auto;
+    top: 100vh;
+    position: relative;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+/*导航栏划分*/
+body .shell-main-nav 
+  {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 18vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(13px);
+  }
+/*logo位置*/
+body .shell-main-nav .logo 
+  {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+/*logo图片大小*/
+body .shell-main-nav .logo img 
+  {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+/*设置logo字体*/
+body .shell-main-nav .logo span 
+  {
+    font: 100 22px 'font';
+    letter-spacing: 2px;
+  }
+/*导航栏功能区设置*/
+body .shell-main-nav ul 
+  {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+  }
+body .shell-main-nav ul .nav-box 
+  {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 115px;
+    height: 5px;
+    border-radius: 2px;
+    z-index: -999;
+    transition: .5s;
+  }
+body .shell-main-nav ul li 
+  {
+    width: 150px;
+    text-align: center;
+  }
+body .shell-main-nav ul li a 
+  {
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+  }
+/*渐变色设置*/
+body .shell-main-nav ul li:nth-child(1):hover~.nav-box 
+  {
+    left: 0px;
+    background-color: rgb(0, 217, 255);
+  }
+body .shell-main-nav ul li:nth-child(2):hover~.nav-box 
+  {
+    left: 120px;
+    background-color: red;
+  }
+body .shell-main-nav ul li:nth-child(3):hover~.nav-box 
+  {
+    left: 240px;
+    background-color: #8da1f8;
+  }
+body .shell-main-nav ul li:nth-child(4):hover~.nav-box
+  {
+    left: 360px;
+    background-color: #5200df;
+  }
+body .shell-main-nav ul li:nth-child(5):hover~.nav-box 
+  {
+    left: 480px;
+    background-color: #7df88e;
+  }
+
+
+/*web介绍划分*/
+body .shell-main-header 
+  {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    margin-bottom: 150px;
+  }
+/*文字区域划分*/
+body .shell-main-header-left 
+  {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(95, 95, 95, 0.5);
+    background-color: white;
+    overflow: hidden;
+  }
+/*上方图标*/
+body .shell-main-header-left::after 
+  {
+    content: '';
+    width: 250px;
+    height: 15px;
+    background-color: #e06a5c;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+/*半矩形图标*/
+body .shell-main-header-left::before 
+  {
+    content: '';
+    width: 250px;
+    height: 250px;
+    border: 20px solid rgba(194, 5, 5, 0.3);
+    position: absolute;
+    bottom: -30px;
+    left: -140px;
+    border-radius: 10px;
+    transform: rotate(30deg);
+    animation: transform 4s infinite;
+  }
+
+  @keyframes transform {
+    0% {
+      transform: rotate(30deg) translate(0);
+    }
+  
+    50% {
+      transform: rotate(40deg) translate(10px);
+    }
+  
+    100% {
+      transform: rotate(30deg) translate(0px);
+    }
+  }
+/*文字脚部*/
+body .shell-main-header-left-footer 
+  {
+    position: relative;
+    width: 80%;
+    margin-top: 40px;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: .9s;
+    transition-delay: .3s;
+  }
+body .shell-main-header-left-footer p 
+  {
+    position: absolute;
+    display: block;
+    right: 0;
+  }
+/*文字中部*/
+body .shell-main-header-left-bottom 
+  {
+    width: 85%;
+    height: auto;
+    transform: translateY(400px);
+    transition: .8s;
+    transition-delay: .2s;
+    font-size: 20px;
+  }
+/*文字头部*/
+body .shell-main-header-left-top 
+  {
+    display: flex;
+    position: relative;
+    width: 85%;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: .8s;
+  }
+body .shell-main-header-left-top h2 
+  {
+    font-size: 100px;
+    transform: translateY(-20px);
+  }
+body .shell-main-header-left-top span 
+  {
+    -webkit-text-fill-color: rgba(234, 142, 111, 0.2);
+    -webkit-text-stroke-color: #d85041;
+    -webkit-text-stroke-width: 1px;
+    margin-left: 20px;
+    font: 600 40px '';
+  }
+/*图片设置*/
+body .shell-main-header-right 
+  {
+    width: 40%;
+    height: 95%;
+    background-size: cover;
+    background-image: url("../image/top.png");
+    border: 5px solid rgb(197, 71, 71);
+  }
+
+/*划分板块区域*/
+body .shell-main-bottom 
+  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    margin: 200px;
+  }
+/*板块文字*/
+body .shell-main-bottom h2 
+  {
+    font: 100 34px 'font';
+    color: rgba(242, 29, 25, 0.477);
+    letter-spacing: 5px;
+    margin-left: 100px;
+  }
+body .shell-main-bottom h2 span 
+  {
+    font-size: 80px;
+    color: rgba(242, 29, 25);
+  }
+/*板块背景色*/
+body .shell-main-bottom-bottom 
+  {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 100px 0;
+    background: linear-gradient(to right bottom, rgba(255, 244, 244, 0.9), rgba(203, 190, 190, 0.215), rgb(255, 255, 255));
+    backdrop-filter: blur(30px);
+    position: relative;
+  }
+/*矩形图标*/
+body .shell-main-bottom-bottom::before 
+  {
+    content: '';
+    width: 250px;
+    height: 250px;
+    border: 20px solid rgba(218, 22, 22, 0.3);
+    position: absolute;
+    border-radius: 10px;
+    right: 70px;
+    top: 100px;
+    transform: rotate(30deg) translate(-50%, -50%);
+    animation: transform 4s infinite;
+    opacity: 0.8;
+    z-index: -999;
+  }
+  
+  @keyframes transform {
+    0% {
+      transform: rotate(30deg);
+    }
+  
+    50% {
+      transform: rotate(40deg);
+    }
+  
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+/*图标边框*/
+body .shell-main-bottom-bottom ul 
+  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+body .shell-main-bottom-bottom ul li 
+  {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 12px solid rgba(194, 5, 5, 0.443);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    transition: .3s;
+    margin-bottom: 100px;
+  }
+body .shell-main-bottom-bottom ul li span 
+  {
+    font-size: 10px;
+  }
+body .shell-main-bottom-bottom ul li:hover 
+  {
+    padding: 2px;
+    margin: 8px;
+  }
+body .shell-main-bottom-bottom ul li:hover h2 
+  {
+    letter-spacing: 3px;
+  }
+body .shell-main-bottom-bottom ul li img 
+  {
+    width: 100%;
+    border-radius: 50%;
+  }
+body .shell-main-bottom-bottom ul li h2
+  {
+    margin: 30px 0 10px 0;
+    font-size: 24px;
+    transition: .3s;
+    color: black;
+    text-align: center;
+    letter-spacing: 0;
+  }
+body .shell-main-bottom-bottom ul li span 
+  {
+    color: #525252;
+  }
+
+
+  body .shell-main-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    margin-bottom: 100px;
+  
+    overflow: hidden;
+  }
+  
+  body .shell-main-content-left {
+    width: 60%;
+    height: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c5a8ab;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  body .shell-main-content-left::before {
+    content: '';
+    width: 250px;
+    height: 20px;
+    background-color: #e76464;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+  
+  body .shell-main-content-left h2 {
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 10px;
+  }
+  
+  body .shell-main-content-left-fans {
+    width: 300px;
+    height: 300px;
+    transform: scale(0.7);
+  }
+  
+  body .shell-main-content-left-fans ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  body .shell-main-content-left-fans ul li {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(230, 201, 201);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  body .shell-main-content-left-fans ul li:hover img {
+    transform: scale(1.2);
+  }
+  
+  body .shell-main-content-left-fans ul li img {
+    width: 100%;
+    transition: .2s;
+  }
+  
+  body .shell-main-content-left-fans ul li span {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    line-height: 80px;
+  }
+  
+  body .shell-main-content-right {
+    width: 300px;
+    height: 100%;
+    padding: 0 60px;
+  }
+  
+  body .shell-main-content-right h2 {
+    font-size: 40px;
+  }
+  
+  body .shell-main-content-right span {
+    display: block;
+    margin: 20px 0;
+  }
+  
+  body .shell-main-content-right img {
+    width: 100%;
+  }
+  /*
+  body .shell-main-lbt {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-color: #978989;
+    margin-bottom: 150px;
+    overflow: hidden;
+    background-image: url("../image/nian/nian8.jpg");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+  
+  body .shell-main-lbt .images {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+  }
+  
+  body .shell-main-lbt .images .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  body .shell-main-lbt .images .img .shell-main-lbt-word {
+    width: 600px;
+    overflow-x: hidden;
+    height: 200px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(0px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(400px);
+    transition: .5s;
+  }
+  
+  body .shell-main-lbt .images .img .shell-main-lbt-word h2 {
+    font: 400 32px 'font';
+    transition: .6s;
+    transition-delay: .4s;
+    transform: translate(520px);
+  }
+  
+  body .shell-main-lbt .images .img .shell-main-lbt-word span {
+    color: #3a3a3a;
+    transition: .6s;
+    transition-delay: .4s;
+    transform: translate(-620px);
+  }
+  
+  body .shell-main-lbt .min-images {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    z-index: 999;
+    right: 10%;
+  }
+  
+  body .shell-main-lbt .button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+  
+  body .shell-main-lbt .button .button-left,
+  body .shell-main-lbt .button .button-right {
+    font-size: 50px;
+    background-color: rgba(240, 83, 56, 0.7);
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 500px;
+  }
+  */
