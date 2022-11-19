@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 152 20"
+   height="20"
+   width="152">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <path
+       id="path4136"
+       d="M 0,0 0,20 4,20 4,0 Z"
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142"
+       d="m 8,0 12,0 0,12 -8,0 0,4 8,0 0,4 L 8,20 8,8 16,8 16,4 8,4 Z"
+       style="fill:#ff7700;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    <path
+       id="path4142-1"
+       d="m 24,0 12,0 0,20 -12,0 0,-4 8,0 0,-4 -8,0 0,-4 8,0 0,-4 -8,0 z"
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2"
+       d="m 40,0 0,12 8,0 0,8 4,0 0,-20 -4,0 0,8 -4,0 0,-8 z"
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2-0"
+       d="m 56,0 0,12 8,0 0,4 -8,0 0,4 12,0 0,-12 -8,0 0,-4 8,0 0,-4 z"
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2-0-9"
+       d="M 72 0 L 72 20 L 84 20 L 84 8 L 76 8 L 76 4 L 84 4 L 84 0 L 72 0 z M 76 12 L 80 12 L 80 16 L 76 16 L 76 12 z "
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2-0-90"
+       d="m 88,0 12,0 0,20 -4,0 0,-16 -8,0 z"
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2-0-90-3"
+       d="M 104 0 L 104 20 L 116 20 L 116 0 L 104 0 z M 108 4 L 112 4 L 112 8 L 108 8 L 108 4 z M 108 12 L 112 12 L 112 16 L 108 16 L 108 12 z "
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2-0-9-4"
+       d="m 132,20 0,-20 -12,0 0,12 8,0 0,4 -8,0 0,4 12,0 z m -4,-12 -4,0 0,-4 4,0 0,4 z"
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path4142-1-2-0-90-5"
+       d="M 136 0 L 136 20 L 148 20 L 148 0 L 136 0 z M 140 4 L 144 4 L 144 16 L 140 16 L 140 4 z "
+       style="fill:#ff7700;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
