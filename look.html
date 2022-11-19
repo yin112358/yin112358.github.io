@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yinguaiの导航栏</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: #223;
+            color: #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* ⊞⊟ */
+        .shell{
+            position: relative;
+            display: block;
+            width: 700px;
+        }
+        details{
+            position: relative;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            max-height: 2.5em !important;
+            transition: 1s;
+        }
+        details[open]{
+            max-height: 700px !important;
+        }
+        details>summary{
+            position: relative;
+            margin-top: 0.25em;
+            color: #99e;
+            padding: 0.1em .5em .2em;
+            background-color: #444;
+        }
+        details>summary::before{
+            content: '⊞';
+            color: #eee;
+            margin-right: 0.5em;
+        }
+        details[open]>summary{
+            background-color: rgb(74, 213, 123);
+            color: #fff;
+        }
+        details[open]>summary::before{
+            content: '⊟';
+            color: #fff;
+        }
+        .folder{
+            border-left: 3px dotted #fff;
+            border-bottom: 3px dotted #fff;
+            margin: 0 0 10px 10px;
+            padding: 10px 0 10px 20px;
+        }
+        .noline a{
+            text-decoration: none;
+        }
+        a:active{color:aquamarine}
+        a:link{color:rgb(40, 190, 195)}
+        a:hover{color:rgb(52, 200, 217)}
+        a:visited{color:aquamarine}
+
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <details>
+            <summary>All</summary>
+            <div class="folder noline">
+                <details open>
+                    <summary>my web</summary>
+                    <div class="folder noline">
+                        <details>
+                            <summary>Alist</summary>
+                            <div class="folder noline">
+                                <p><a href="http://175.24.182.141:5244/">云盘</a></p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>学盟网站</summary>
+                            <div class="folder noline">
+                                <p><a href="https://yinguai.github.io/">主页</a></p>
+                                <p><a href="https://yinguai.github.io/SHU-xuemeng/SHUweb-navigation/">上大网址导航</a></p>
+                                <p><a href="http://101.34.255.18/">选课小本本撰写-OverLeaf</a></p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>WIKI</summary>
+                            <div class="folder noline">
+                                <p><a href="http://101.34.255.18:3000/">Yin-T's wiki</a></p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>个人网站</summary>
+                            <div class="folder noline">
+                                <p><a href="https://yinguai.art">主页</a></p>
+                                <p><a href="https://console.leancloud.app/apps">评论系统后台-LeanCloud</a></p>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+                <details>
+                    <summary>Likes's web</summary>
+                    <div class="folder noline">
+                        <details open>
+                            <summary>日常</summary>
+                            <div class="folder noline">
+                                <p><a href="https://yuuikic.com/">桜庭夜 | 杂话铺子</a></p>
+                                <p><a href="https://blog.lyunvy.top/">LYUNVY</a></p>
+                                <p><a href="https://69mike.com/index.html">John Mike</a></p>
+                                <p><a href="https://yuuikic.com/">桜庭夜 | 杂话铺子</a></p>
+                                <p><a href="https://blog.lyunvy.top/">LYUNVY</a></p>
+                                <p><a href="https://69mike.com/index.html">John Mike</a></p>
+                                <p><a href="https://ishya.top/">UTOPIA</a></p>
+                                <p><a href="https://sound.cyris.moe/">Cyris's Sound</a></p>
+                                <p><a href="https://chanshiyu.com/">蝉时雨</a></p>
+                                <p><a href="https://snow.js.org/">Shiro书架</a></p>
+                                <p><a href="https://cat.dorcandy.cn/">火喵博客</a></p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>学习</summary>
+                            <div class="folder noline">
+                                <p><a href="https://bkryofu.xyz/">河童的便利屋</a></p>
+                                <p><a href="https://kenvix.com/">Kenvix's Blog</a></p>
+                                <p><a href="https://dearain.cn/">云烟成雨</a></p>
+                                <p><a href="https://9bie.org/index.php/">⑨BIE</a></p>
+                                <p><a href="https://eritque-arcus.tech/">Eritque arcus</a></p>
+                                <p><a href="https://hesifan.top/">FanHeart</a></p>
+                                <p><a href="https://blog.suki.house/">秋风茶屋 Vent d'Automne</a></p>
+                                <p><a href="https://irithys.com/">山茶花舍</a></p>
+                                <p><a href="https://rainchan.win/">RainChan的小博客</a></p>
+                                <p><a href="https://kenvix.com/">Kenvix's Blog</a></p>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+            </div>
+        </details>
+    </div>
+
+
+</body>
+<!-- 不支持ie -->
+</html>
